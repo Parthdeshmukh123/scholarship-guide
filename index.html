@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Career &amp; Scholarship Guide for Students</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6fb;--card:#fff;--ink:#14213d;--mut:#4d5b78;--line:#d6deec;--acc:#0f766e;--acc-ink:#fff;--warn:#f2b705;--warn-bg:#fff6d6;--bad:#b42318;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1626;--card:#16213a;--ink:#eef2fb;--mut:#a7b3cc;--line:#2a3857;--acc:#38c7b9;--acc-ink:#06201d;--warn-bg:#3a2f0a;--bad:#ff8b7e}}
+:root[data-theme="dark"]{--bg:#0e1626;--card:#16213a;--ink:#eef2fb;--mut:#a7b3cc;--line:#2a3857;--acc:#38c7b9;--acc-ink:#06201d;--warn-bg:#3a2f0a;--bad:#ff8b7e}
+html{scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Mukta","Noto Sans Devanagari",system-ui,sans-serif}
+a{color:var(--acc)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ink);color:#fff}
+header .wrap{display:flex;align-items:center;gap:14px;height:56px}
+header b{font-weight:800;white-space:nowrap}
+nav{display:flex;gap:16px;overflow-x:auto;flex:1;scrollbar-width:none}
+nav a{color:#dfe7f7;text-decoration:none;white-space:nowrap;font-size:15px}
+.lang{display:flex;border:1px solid #6f7fa5;border-radius:99px;overflow:hidden;flex:none}
+.lang button{background:none;border:0;color:#fff;padding:4px 12px;font-weight:600;font-size:14px;font-family:inherit;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--warn);color:#14213d}
+.hero{padding:44px 0 30px}
+h1{font:800 clamp(2.1rem,7vw,3.4rem)/1.1 "Mukta",sans-serif;margin:0 0 14px;max-width:16ch}
+.hero p{color:var(--mut);max-width:52ch;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font-weight:600;font-size:16px;font-family:inherit;border-radius:99px;padding:10px 20px;border:2px solid var(--ink);background:none;color:var(--ink);cursor:pointer;text-decoration:none;display:inline-block}
+.btn.main{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font:800 1.75rem/1.2 "Mukta",sans-serif;margin:0}
+.sub{color:var(--acc);font-weight:600;margin:0 0 10px;min-height:1.4em}
+.lead{color:var(--mut);margin:0 0 18px;max-width:60ch}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.box h3{margin:0 0 6px;font-size:1.15rem}
+.box dl{margin:0}.box dt{font-weight:600;font-size:.85rem;color:var(--mut);margin-top:8px}.box dd{margin:0}
+.note{background:var(--warn-bg);border-left:5px solid var(--warn);padding:12px 16px;border-radius:6px;margin-top:16px}
+.ck{display:grid;grid-template-columns:1fr 150px;gap:20px;align-items:start}
+.ring{position:sticky;top:76px;text-align:center}
+.ring svg{width:130px;height:130px}
+.ring .n{font-weight:800;font-size:1.6rem}
+.stamp{display:none;border:3px solid var(--acc);color:var(--acc);font-weight:800;padding:2px 10px;border-radius:6px;transform:rotate(-6deg);margin-top:8px}
+.ring.done .stamp{display:inline-block}
+.items{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.items label{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer}
+.items input{width:22px;height:22px;accent-color:var(--acc);margin-top:3px;flex:none}
+.items small{display:block;color:var(--mut)}
+.items input:checked + span b{text-decoration:line-through;color:var(--mut)}
+.dl form{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.dl input{font:inherit;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);flex:1 1 160px}
+.dl ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.dl li{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.tag{font-size:.85rem;font-weight:600;padding:2px 10px;border-radius:99px;background:var(--line)}
+.tag.soon{background:var(--warn)}.tag.past{color:var(--bad)}
+.x{background:none;border:0;color:var(--mut);font-size:1.3rem;cursor:pointer}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.cards .box p{margin:0 0 8px;color:var(--mut)}
+.fake{border:3px solid var(--bad);border-radius:10px;padding:18px;background:var(--card)}
+.fake strong{display:block;color:var(--bad);font-size:1.25rem;margin-bottom:6px}
+.fake ul{margin:0;padding-left:20px}
+.bar{display:grid;grid-template-columns:minmax(120px,40%) 1fr 48px;gap:10px;align-items:center;margin:6px 0;font-size:.95rem}
+.bar i{display:block;height:12px;border-radius:6px;background:var(--acc)}
+.bar div{background:var(--line);border-radius:6px}
+footer{padding:28px 0 40px;color:var(--mut);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:640px){.cmp{grid-template-columns:1fr}.ck{grid-template-columns:1fr}.ring{position:static;display:flex;align-items:center;gap:14px;justify-content:flex-start;text-align:left}.ring svg{width:70px;height:70px}header b{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{header,.btns,.dl form,.x{display:none}body{background:#fff;color:#000}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<b data-mr="शिष्यवृत्ती मार्गदर्शक">Scholarship Guide</b>
+<nav aria-label="Sections">
+<a href="#schemes" data-mr="योजना">Schemes</a><a href="#checklist" data-mr="कागदपत्रे">Checklist</a><a href="#deadlines" data-mr="तारखा">Deadlines</a>
+<a href="#careers" data-mr="करिअर">Careers</a><a href="#fake" data-mr="फसवणूक">Fake agents</a><a href="#help" data-mr="मदत">Help</a>
+</nav>
+<div class="lang" role="group" aria-label="Language"><button id="en" aria-pressed="true">EN</button><button id="mr" aria-pressed="false">मराठी</button></div>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+<h1 data-mr="योग्य शिष्यवृत्ती शोधा आणि आत्मविश्वासाने अर्ज करा.">Find the right scholarship. Apply with confidence.</h1>
+<p data-mr="महाविद्यालयीन विद्यार्थ्यांसाठी शिष्यवृत्ती, अभ्यासक्रम आणि करिअरची सोप्या भाषेतील मोफत माहिती.">A free, plain-language guide to scholarships, courses and careers for college students.</p>
+<div class="btns">
+<a class="btn main" href="#checklist" data-mr="कागदपत्रांची यादी पाहा">Open the checklist</a>
+<button class="btn" id="pdf" data-mr="PDF म्हणून सेव्ह करा">Save as PDF</button>
+<button class="btn" id="wa" data-mr="व्हॉट्सॲपवर शेअर करा">Share on WhatsApp</button>
+</div></div>
+
+<section id="schemes">
+<h2 data-mr="शिष्यवृत्ती एका नजरेत">Scholarships at a glance</h2>
+<p class="lead" data-mr="NSP आणि MahaDBT ही दोन वेगळी पोर्टल्स आहेत. एकावर अर्ज केल्याने दुसऱ्यावर अर्ज होत नाही.">NSP and MahaDBT are two different portals. Applying on one does not apply you on the other.</p>
+<div class="cmp">
+<div class="box"><h3>National Scholarship Portal (NSP)</h3><dl>
+<dt>Run by</dt><dd>Government of India</dd><dt>Covers</dt><dd>Central scholarships and some state ones</dd>
+<dt>Apply at</dt><dd><a href="https://scholarships.gov.in" target="_blank" rel="noopener">scholarships.gov.in</a></dd></dl></div>
+<div class="box"><h3>MahaDBT</h3><dl>
+<dt>Run by</dt><dd>Government of Maharashtra</dd><dt>Covers</dt><dd>Maharashtra scholarships and fee-related benefits</dd>
+<dt>Apply at</dt><dd><a href="https://mahadbt.maharashtra.gov.in" target="_blank" rel="noopener">mahadbt.maharashtra.gov.in</a></dd></dl></div>
+</div>
+<div class="note"><b>College fee concession:</b> your college handles this, not a portal. Ask the college office what is offered and when to apply.</div>
+</section>
+
+<section id="checklist">
+<h2 data-mr="कागदपत्रांची यादी">Document checklist</h2>
+<p class="lead" data-mr="पोर्टल उघडण्यापूर्वी ही कागदपत्रे तयार ठेवा. तुमच्या टिकल्या या फोनवर सेव्ह होतात.">Get these ready before you open the portal. Your ticks are saved on this device.</p>
+<div class="ck">
+<ul class="items" id="items"></ul>
+<div class="ring" id="ring">
+<svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="none" stroke="var(--line)" stroke-width="12"/>
+<circle id="arc" cx="60" cy="60" r="50" fill="none" stroke="var(--acc)" stroke-width="12" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="314" transform="rotate(-90 60 60)" style="transition:stroke-dashoffset .35s"/></svg>
+<div><div class="n" id="cnt" aria-live="polite">0 of 9</div><div class="stamp" data-mr="सर्व तयार">All set</div></div>
+</div></div>
+</section>
+
+<section id="deadlines" class="dl">
+<h2 data-mr="अंतिम तारखांची नोंद">Deadline tracker</h2>
+<p class="lead" data-mr="तारखा दरवर्षी बदलतात. प्रत्येक तारीख अधिकृत पोर्टलवरून घ्या आणि येथे लिहा.">Dates change every year. Copy each date from the official portal and add it here.</p>
+<form id="dform"><input id="dname" placeholder="Scheme name" data-mr-ph="योजनेचे नाव" required><input id="ddate" type="date" required aria-label="Date"><button class="btn main" data-mr="तारीख जोडा">Add deadline</button></form>
+<ul id="dlist"></ul>
+<p id="dempty" class="lead" data-mr="अजून तारीख जोडलेली नाही. वर तुमची पहिली तारीख जोडा.">No deadlines yet. Add your first one above.</p>
+<div class="note" data-mr="अर्ज करण्यापूर्वी चालू वर्षाची तारीख नेहमी अधिकृत पोर्टलवर तपासा.">Always confirm this year's date on the official portal before you rely on it.</div>
+</section>
+
+<section id="careers">
+<h2 data-mr="अभ्यासक्रम, करिअर आणि कौशल्ये">Courses, careers and skills</h2>
+<p class="lead" data-mr="मोफत किंवा कमी खर्चाचे सरकारी पर्याय.">Free or low-cost government options.</p>
+<div class="cards">
+<div class="box"><h3>SWAYAM / NPTEL</h3><p>Free online courses from Indian institutions.</p><a href="https://swayam.gov.in" target="_blank" rel="noopener">swayam.gov.in</a></div>
+<div class="box"><h3>National Career Service</h3><p>Job listings and career guidance.</p><a href="https://www.ncs.gov.in" target="_blank" rel="noopener">ncs.gov.in</a></div>
+<div class="box"><h3>Skill India</h3><p>Skill training and certification.</p><a href="https://www.skillindia.gov.in" target="_blank" rel="noopener">skillindia.gov.in</a></div>
+<div class="box"><h3>Apprenticeship portal</h3><p>On-the-job training while you learn.</p><a href="https://www.apprenticeshipindia.gov.in" target="_blank" rel="noopener">apprenticeshipindia.gov.in</a></div>
+</div></section>
+
+<section id="fake">
+<h2 data-mr="फसवणूक करणाऱ्या एजंटपासून सावध राहा">Avoid fake agents</h2>
+<div class="fake"><strong data-mr="सरकारी शिष्यवृत्तीसाठी अर्ज करणे मोफत आहे.">Applying for a government scholarship is free.</strong>
+<ul>
+<li data-mr="पोर्टलचा पत्ता स्वतः टाइप करा. अधिकृत साइट सहसा .gov.in ने संपतात.">Type the portal address yourself. Official sites usually end in .gov.in.</li>
+<li data-mr="शिष्यवृत्तीची हमी देण्यासाठी कोणालाही पैसे देऊ नका.">Never pay anyone to guarantee a scholarship.</li>
+<li data-mr="तुमचा OTP किंवा पासवर्ड कोणालाही सांगू नका.">Never share your OTP or password, even with someone helping you.</li>
+<li data-mr="खात्री नसेल तर आधी शिक्षक किंवा महाविद्यालयाच्या कार्यालयाला दाखवा.">Not sure? Show it to your teacher or college office first.</li>
+</ul></div></section>
+
+<section id="help">
+<h2 data-mr="मदत कुठे मिळेल?">Where to ask for help</h2>
+<div class="cards">
+<div class="box"><h3 data-mr="महाविद्यालयाचे कार्यालय">College office</h3><p>Ask about fee concession and getting your form verified.</p></div>
+<div class="box"><h3 data-mr="वर्गशिक्षक">Class teacher</h3><p>Check notices and ask before you trust a forwarded link.</p></div>
+<div class="box"><h3 data-mr="अर्ज केलेले सीनियर">A senior who applied</h3><p>Ask which step was confusing and what they would do differently.</p></div>
+<div class="box"><h3 data-mr="पोर्टलची हेल्पडेस्क">Portal helpdesk</h3><p>NSP and MahaDBT list helpdesk details on their own websites.</p></div>
+</div></section>
+
+<section id="findings" hidden>
+<h2 data-mr="सर्वेक्षणातील निष्कर्ष">What students told us</h2>
+<p class="lead" id="fsub"></p><div id="fbars"></div>
+</section>
+</main>
+
+<footer><div class="wrap"><span data-mr="येथील माहिती मार्गदर्शनासाठी आहे. अर्ज करण्यापूर्वी तपशील अधिकृत पोर्टलवर तपासा.">This guide is for orientation. Confirm all details on the official portal before applying.</span></div></footer>
+
+<script>
+// After your survey: set n and add {label, pct} rows (copied from your Chapter 6 results). Leave empty to hide the section.
+var RESULTS={n:0,rows:[]};
+
+var DOCS=[["Aadhaar card","आधार कार्ड","Check that your mobile number is linked."],
+["Bank passbook or KYC","बँक पासबुक / केवायसी","Account in your own name, linked to Aadhaar."],
+["Income certificate","उत्पन्नाचा दाखला","Needed for income-based schemes. Check it has not expired."],
+["Caste certificate","जात प्रमाणपत्र (लागू असल्यास)","Only if you apply under a category-based scheme."],
+["Domicile certificate","अधिवास प्रमाणपत्र","Shows you are a resident of Maharashtra."],
+["Last marksheet","मागील गुणपत्रिका","Latest result from your college or school."],
+["Admission proof and fee receipt","प्रवेश पुरावा व फी पावती","Ask the college office for a bonafide letter if needed."],
+["Passport photo and signature","पासपोर्ट फोटो व स्वाक्षरी","Scanned in the size the portal asks for."],
+["Active mobile number and email","चालू मोबाइल नंबर व ईमेल","The portal sends OTPs and status updates here."]];
+var lang="en",KEY="csg_checks",DK="csg_deadlines";
+function load(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+var checks=load(KEY,[]),dls=load(DK,[]);
+
+document.querySelectorAll("[data-mr]").forEach(function(e){e.dataset.en=e.textContent});
+document.querySelectorAll("[data-mr-ph]").forEach(function(e){e.dataset.enPh=e.placeholder});
+function setLang(l){lang=l;
+document.documentElement.lang=l==="mr"?"mr":"en";
+document.querySelectorAll("[data-mr]").forEach(function(e){if(e.dataset.mr)e.textContent=l==="mr"?e.dataset.mr:e.dataset.en});
+document.querySelectorAll("[data-mr-ph]").forEach(function(e){e.placeholder=l==="mr"?e.dataset.mrPh:e.dataset.enPh});
+document.getElementById("en").setAttribute("aria-pressed",l==="en");document.getElementById("mr").setAttribute("aria-pressed",l==="mr");
+buildDocs();renderCount();renderD();renderF()}
+document.getElementById("en").onclick=function(){setLang("en")};document.getElementById("mr").onclick=function(){setLang("mr")};
+
+function buildDocs(){var ul=document.getElementById("items");ul.innerHTML="";
+DOCS.forEach(function(d,i){var li=document.createElement("li"),lb=document.createElement("label"),cb=document.createElement("input");
+cb.type="checkbox";cb.checked=checks.indexOf(i)>-1;cb.onchange=function(){checks=checks.filter(function(x){return x!==i});if(cb.checked)checks.push(i);save(KEY,checks);renderCount()};
+var sp=document.createElement("span"),b=document.createElement("b"),sm=document.createElement("small");
+b.textContent=lang==="mr"?d[1]:d[0];sm.textContent=d[2];sp.appendChild(b);sp.appendChild(sm);lb.appendChild(cb);lb.appendChild(sp);li.appendChild(lb);ul.appendChild(li)})}
+function renderCount(){var n=checks.length,t=DOCS.length;
+document.getElementById("cnt").textContent=lang==="mr"?t+" पैकी "+n:n+" of "+t;
+document.getElementById("arc").style.strokeDashoffset=314*(1-n/t);
+document.getElementById("ring").classList.toggle("done",n===t)}
+
+function renderD(){var ul=document.getElementById("dlist");ul.innerHTML="";
+document.getElementById("dempty").hidden=dls.length>0;
+var today=new Date();today.setHours(0,0,0,0);
+dls.slice().sort(function(a,b){return a.d<b.d?-1:1}).forEach(function(x){
+var days=Math.round((new Date(x.d+"T00:00:00")-today)/864e5),tag,cls="tag";
+if(days<0){tag=lang==="mr"?"संपली":"Closed";cls+=" past"}else if(days===0){tag=lang==="mr"?"आज":"Today";cls+=" soon"}
+else{tag=lang==="mr"?days+" दिवस बाकी":days+" days left";if(days<=7)cls+=" soon"}
+var li=document.createElement("li"),l=document.createElement("span"),t=document.createElement("span"),r=document.createElement("span"),bt=document.createElement("button");
+l.innerHTML="<b></b> <small></small>";l.firstChild.textContent=x.n;l.lastChild.textContent=x.d;t.className=cls;t.textContent=tag;
+bt.className="x";bt.textContent="\u00d7";bt.setAttribute("aria-label","Remove");bt.onclick=function(){dls=dls.filter(function(y){return y.id!==x.id});save(DK,dls);renderD()};
+r.appendChild(t);r.appendChild(bt);li.appendChild(l);li.appendChild(r);ul.appendChild(li)})}
+document.getElementById("dform").onsubmit=function(e){e.preventDefault();
+dls.push({id:Date.now(),n:document.getElementById("dname").value.trim(),d:document.getElementById("ddate").value});
+save(DK,dls);this.reset();renderD()};
+
+function renderF(){var s=document.getElementById("findings");if(!RESULTS.rows.length){s.hidden=true;return}
+s.hidden=false;document.getElementById("fsub").textContent=(lang==="mr"?"सर्वेक्षण: ":"Survey of ")+RESULTS.n+(lang==="mr"?" विद्यार्थी":" students");
+var box=document.getElementById("fbars");box.innerHTML="";
+RESULTS.rows.forEach(function(r){var d=document.createElement("div");d.className="bar";
+d.innerHTML="<span></span><div><i></i></div><b></b>";d.children[0].textContent=r.label;d.children[1].firstChild.style.width=r.pct+"%";d.children[2].textContent=r.pct+"%";box.appendChild(d)})}
+
+document.getElementById("pdf").onclick=function(){window.print()};
+document.getElementById("wa").onclick=function(){window.open("https://wa.me/?text="+encodeURIComponent("Free scholarship and career guide for students: "+location.href),"_blank")};
+setLang("en");
+</script>
+</body>
+</html>
